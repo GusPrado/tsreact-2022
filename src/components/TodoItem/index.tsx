@@ -14,20 +14,18 @@ type TodoItemProps = {
 const TodoItem = ({ todo, todos, setTodos }: TodoItemProps) => {
   return (
     <form className='todos__item'>
-      <span className='todos__item--text'>
-        {todo.todo}
-        <div>
-          <span className='todos__item--icon'>
-            <AiFillEdit />
-          </span>
-          <span className='todos__item--icon'>
-            <AiFillDelete />
-          </span>
-          <span className='todos__item--icon'>
-            <MdDone />
-          </span>
-        </div>
-      </span>
+      <span className='todos__item--text'>{todo.todo}</span>
+      <>
+        <span className='todos__item--icon'>
+          <AiFillEdit />
+        </span>
+        <span className='todos__item--icon'>
+          <AiFillDelete />
+        </span>
+        <span className='todos__item--icon'>
+          <MdDone />
+        </span>
+      </>
     </form>
   );
 };
