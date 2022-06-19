@@ -1,0 +1,38 @@
+.todos__item {
+  display: flex;
+  width: 29.5%;
+  border-radius: 6px;
+  padding: 20px;
+  margin-top: 1rem;
+  background-image: url(https://img.freepik.com/vetores-gratis/copiar-espaco-gradiente-de-fundo-laranja_23-2148845473.jpg);
+  background-size: cover;
+}
+
+.todos__item--text {
+  flex: 1;
+  padding: 6px;
+  border: none;
+  font-size: 24px;
+}
+
+.todos__item--text:focus {
+  outline: none;
+}
+
+.todos__item--icon {
+  margin-left: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .todos__item {
+    width: 40%;
+  }
+}
+
+@media (max-width: 700px) {
+  .todos__item {
+    width: 100%;
+  }
+}
