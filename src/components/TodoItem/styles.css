@@ -1,13 +1,22 @@
+.todos__heading {
+  font-size: 30px;
+  color: #fff;
+}
+
 .todos__item {
   display: flex;
-  align-items: center
-  ;
-  width: 30%;
-  border-radius: 6px;
+  align-items: center;
+  border-radius: 4px;
   padding: 20px;
   margin-top: 1rem;
   background-image: url(https://img.freepik.com/vetores-gratis/copiar-espaco-gradiente-de-fundo-laranja_23-2148845473.jpg);
   background-size: cover;
+  transition: 0.2s;
+}
+
+.todos__item:hover {
+  box-shadow: 0 0 4px #000;
+  transform: scale(1.03);
 }
 
 .todos__item--text {
@@ -31,11 +40,5 @@
 @media (max-width: 1200px) {
   .todos__item {
     width: 40%;
-  }
-}
-
-@media (max-width: 700px) {
-  .todos__item {
-    width: 100%;
   }
 }
