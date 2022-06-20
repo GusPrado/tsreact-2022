@@ -37,6 +37,10 @@
   cursor: pointer;
 }
 
+.drag {
+  box-shadow: 0 0 20px #000;
+}
+
 @media (max-width: 1200px) {
   .todos__item {
     width: 40%;
